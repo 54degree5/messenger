@@ -75,7 +75,7 @@
 .messageblue {
   margin-left: 1em;
   position: relative;
-  width: fit-content;
+  width: fit-content; 
   max-width: 90%;
   word-wrap: break-word;
   padding: 10px;

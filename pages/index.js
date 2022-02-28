@@ -13,6 +13,8 @@ const fetcher = (...args) => fetch(...args).then(res => res.json()).then((data) 
   return chat
 })
 
+
+
 export default function Home() {
   const [message, setMessage] = useState("")
   const [username, setUsername] = useState("user" + Math.floor(Math.random() * 1000))
