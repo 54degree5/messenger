@@ -184,6 +184,10 @@
   margin-bottom: 0;
 }
 
+.redcol {
+  color: red;
+}
+
 @media (max-width: 600px) {
   .form .username {
     width: 3em;

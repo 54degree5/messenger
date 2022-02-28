@@ -12,12 +12,10 @@ const fetcher = (...args) => fetch(...args).then(res => res.json()).then((data) 
   })
   return chat
 })
-
-
-
+ 
 export default function Home() {
   const [message, setMessage] = useState("")
-  const [username, setUsername] = useState("user" + Math.floor(Math.random() * 1000))
+  const [username, setUsername] = useState("")
   const { data, ferror } = useSWR('/api/messages', fetcher, { refreshInterval: 1000 })
 
   let error = ""
@@ -42,7 +40,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-      <center><h1>54degree5 — это безинтернетный, полнустью анонимный мессенджер!</h1></center>
+      <center><h1>54degree5 Messenger — это <span className={styles.redcol}>безинтернетный</span>, полнустью <span className={styles.redcol}>анонимный</span> мессенджер!</h1></center>
+      <center><h3>Сайт сделан <span className={styles.redcol}>Сухоцким Александром</span></h3></center>
       <div className={styles.messagebox}>{data}</div>
         <main className={styles.main}>
           
