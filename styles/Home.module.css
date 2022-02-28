@@ -184,8 +184,16 @@
   margin-bottom: 0;
 }
 
-.redcol {
-  color: red;
+.bluecol {
+  color: #0969da;
+}
+
+.bluecollink {
+  color: #0969da;
+}
+
+.bluecollink:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {

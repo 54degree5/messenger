@@ -40,8 +40,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-      <center><h1>54degree5 Messenger — это <span className={styles.redcol}>безинтернетный</span>, полнустью <span className={styles.redcol}>анонимный</span> мессенджер!</h1></center>
-      <center><h3>Сайт сделан <span className={styles.redcol}>Сухоцким Александром</span></h3></center>
+      <center><h1>54degree5 Messenger — это <span className={styles.bluecol}>безинтернетный</span>, полностью <span className={styles.bluecol}>анонимный</span> мессенджер!</h1></center>
+      <center className><h3>Сайт сделан <span className={styles.bluecollink}><Link href={"https://github.com/54degree5"}>
+                <a>
+                    Сухоцким Александром
+                </a>
+            </Link></span></h3></center>
       <div className={styles.messagebox}>{data}</div>
         <main className={styles.main}>
           
