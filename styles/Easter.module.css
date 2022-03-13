@@ -1,0 +1,15 @@
+.hacked {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    position: absolute;
+    width: 40em;
+    height: 40em;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

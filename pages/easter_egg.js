@@ -1,16 +1,18 @@
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Easter.module.css'
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
+
 export default function Poop() {
+  const handle = useFullScreenHandle();
   return (
     <div>
-      <div className={styles.main}>
-        <div className={styles.card}>
-          <b>пасхалка)</b>
-        </div>
-      </div>
-      <div className={styles.form}>
-        <b><Link href=".">На Главную</Link></b>
-      </div>
+      <button onClick={handle.enter} className={styles.button}>
+        ЕЩЕ НЕ ПОЗДНО 
+        <br></br>
+        НЕ НАЖИМАЙ НА ЭКРАН!!!
+      </button>
+      <FullScreen handle={handle} className={styles.hacked}>
+        <img src="/YOUWEREHACKED.png"></img>
+      </FullScreen>
     </div>
   )
 }
