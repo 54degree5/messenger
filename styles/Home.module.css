@@ -177,6 +177,18 @@
   border-radius: 0.25em;
   background: #fff;
   font-size: inherit;
+  transition: color 150ms ease-in-out, background 150ms ease-in-out;
+}
+
+.send:hover {
+  color: white;
+  background: #0070f3;
+}
+
+.send:disabled, .send:disabled:hover {
+  border-color: #999;
+  color: #999;
+  background: white;
 }
 
 .error, p.error {
